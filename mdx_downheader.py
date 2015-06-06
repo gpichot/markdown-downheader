@@ -2,8 +2,8 @@
 import markdown
 import re
 
-def makeExtension(configs=None) :
-    return DownHeaderExtension(configs=configs)
+def makeExtension(*args, **kwargs) :
+    return DownHeaderExtension(*args, **kwargs)
 
 class DownHeaderExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
