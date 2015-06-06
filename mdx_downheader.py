@@ -4,7 +4,7 @@ import re
 
 def makeExtension(configs=None) :
     return DownHeaderExtension(configs=configs)
-    
+
 class DownHeaderExtension(markdown.Extension):
     def extendMarkdown(self, md, md_globals):
         if 'downheader' in md.treeprocessors.keys():
